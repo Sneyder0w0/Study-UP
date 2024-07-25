@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "infos",
+  "info": {
+    "singularName": "info",
+    "pluralName": "infos",
+    "displayName": "Info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reading_method": {
+      "type": "text"
+    },
+    "schemas_method": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "tutorial_method": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "podcast_method": {
+      "allowedTypes": [
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

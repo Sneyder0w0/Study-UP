@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "metodos",
+  "info": {
+    "singularName": "metodo",
+    "pluralName": "metodos",
+    "displayName": "Metodo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "method_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "info": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::info.info"
+    }
+  }
+}

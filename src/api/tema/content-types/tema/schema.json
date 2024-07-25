@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "temas",
+  "info": {
+    "singularName": "tema",
+    "pluralName": "temas",
+    "displayName": "Tema"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "topic_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "materia": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::materia.materia",
+      "inversedBy": "temas"
+    },
+    "quiz": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::quizz.quizz",
+      "mappedBy": "tema"
+    }
+  }
+}

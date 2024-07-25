@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quizzes",
+  "info": {
+    "singularName": "quizz",
+    "pluralName": "quizzes",
+    "displayName": "quizz",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quizz_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "materia": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::materia.materia",
+      "inversedBy": "quizz"
+    },
+    "tema": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tema.tema",
+      "inversedBy": "quiz"
+    },
+    "score": {
+      "type": "integer"
+    }
+  }
+}
