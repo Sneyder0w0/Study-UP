@@ -4,7 +4,8 @@
   "info": {
     "singularName": "info",
     "pluralName": "infos",
-    "displayName": "Info"
+    "displayName": "Info",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,26 +15,32 @@
     "reading_method": {
       "type": "text"
     },
-    "schemas_method": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "tutorial_method": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "podcast_method": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "nombre_de_la_info": {
+      "type": "string"
     }
   }
 }
